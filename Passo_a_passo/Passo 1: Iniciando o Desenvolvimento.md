@@ -2,7 +2,7 @@
 
 Para construir o ambiente de desenvolvimento do sistema CisternaGuardianPB, siga os seguintes passos:
 
-- [ ] Instale o Java, baixando e instalando a última versão disponível em https://www.java.com/pt_BR/download/.
+- [ ] Instale o Java 11, baixando e instalando a última versão disponível em https://www.java.com/pt_BR/download/.
 - [ ] Instale o Spring Boot, seguindo as instruções em https://spring.io/projects/spring-boot.
 - [ ] Instale o servidor MongoDB, baixando e instalando a última versão disponível em https://www.mongodb.com/download-center/community.
 - [ ] Configure o MongoDB para iniciar automaticamente no boot do sistema e inicie o servidor.
