@@ -230,16 +230,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
 {
   "id": 1,
-  "lote_id": 123,
-  "beneficiario_id": 456,
-  "capacidade": 10000,
-  "diametro": 2.5,
-  "altura": 3.5,
-  "data_inicio": "2022-01-01",
-  "data_conclusao": "2022-12-31",
-  "status": "em execução",
-  "problemas_encontrados": [],
-  "comentarios": "",
+  "especificacoes": {
+      "volume_util": 10000,
+      "altura_util": 3,
+      "altura_total": 5,
+      "diametro_interno": 3,
+      "diametro_externo": 3.1,
+      "area_lamina_dagua": 7.2,
+      "placa_da_parede": "0.35 x 0.40 x 0,03",
+      "material": "concreto"
+  },
   "checklist_fiscalizacao": [
     {
       "id": 1,
