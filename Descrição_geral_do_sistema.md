@@ -37,6 +37,26 @@ O objetivo geral do sistema CisternaGuardianPB é contribuir para a melhoria da 
 
 - Acelerar o processo de entrega de recursos: o sistema deve permitir avaliar de maneira mais rápida o cumprimento dos requisitos exigidos pelo projeto, acelerando o processo de entrega de recursos às empresas licitadas.
 
+# Funcionalidades do Sistema
+
+O sistema CisternaGuardianPB pode oferecer uma série de funcionalidades para monitorar e fiscalizar a construção das cisternas e garantir a qualidade do projeto. Algumas dessas funcionalidades podem ser:
+
+- Monitoramento do progresso da obra: o sistema deve permitir acompanhar o progresso da obra em tempo real, incluindo o uso de materiais e mão de obra, o cumprimento de prazos e o cumprimento de padrões de qualidade.
+
+- Verificação de cumprimento de requisitos: o sistema deve permitir verificar o cumprimento dos requisitos exigidos pelo projeto, incluindo o cumprimento de padrões de qualidade, o uso de materiais adequados e o cumprimento de prazos.
+
+- Gerenciamento de equipe: o sistema deve permitir gerenciar as responsabilidades da equipe envolvida na construção das cisternas, garantindo que cada membro da equipe saiba o que é esperado dele e possa cumprir suas tarefas de maneira eficiente.
+
+- Relatórios detalhados: o sistema deve permitir gerar relatórios detalhados sobre o progresso da obra, o uso de recursos e outros aspectos importantes do projeto
+
+- Acesso a informações em tempo real: o sistema deve permitir que os usuários acessem facilmente as informações relevantes sobre as cisternas e o progresso da obra, de maneira a facilitar a tomada de decisões e a resolução de problemas.
+
+- Análise de gráficos: o sistema deve permitir gerar gráficos e outras visualizações de dados que possam ajudar a entender o progresso da obra, o uso de recursos e outros aspectos importantes do projeto. Essas visualizações podem incluir gráficos de barras, gráficos de linhas, mapas e outros tipos de gráficos.
+
+- Aceleração do processo de entrega de recursos: o sistema deve permitir avaliar de maneira mais rápida o cumprimento dos requisitos exigidos pelo projeto, acelerando o processo de entrega de recursos às empresas licitadas.
+
+- Gerenciamento de documentação: o sistema deve permitir armazenar e gerenciar documentos relevantes para o projeto, como contratos, relatórios técnicos e outros documentos.
+
 
 
 
