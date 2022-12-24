@@ -37,3 +37,27 @@ O objeto JSON retornado pela rota de monitoramento do progresso da obra poderia 
 | `problemas_encontrados` | Uma lista de problemas encontrados durante a execução da obra, se houver.                                             |
 | `comentarios`  | Um campo de texto livre para comentários adicionais sobre o progresso da obra.                                            |
 | `arquivos`     | Uma lista de arquivos anexados ao registro do progresso da obra, como fotos, vídeos ou relatórios técnicos. Cada item da lista pode conter informações sobre o arquivo, como nome, tipo e URL de download. |
+
+Abaixo segue o modelo de objeto JSON retornado pela rota de monitoramento do progresso da obra:
+
+{
+  "id": 123,
+  "progresso": 50,
+  "data_prevista_termino": "2022-12-31",
+  "status": "em execução",
+  "problemas_encontrados": ["Falta de mão de obra", "Falta de materiais"],
+  "comentarios": "Estamos trabalhando para resolver os problemas mencionados e esperamos concluir a obra até o final do ano.",
+  "arquivos": [
+    {
+      "nome": "foto_01.jpg",
+      "tipo": "imagem/jpeg",
+      "url": "https://example.com/obras/123/foto_01.jpg"
+    },
+    {
+      "nome": "relatorio_tecnico.pdf",
+      "tipo": "application/pdf",
+      "url": "https://example.com/obras/123/relatorio_tecnico.pdf"
+    }
+  ]
+}
+
