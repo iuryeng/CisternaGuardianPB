@@ -45,6 +45,34 @@ Cada controller conterá os métodos necessários para atender às requisições
 
 As respostas das operações serão devolvidas ao cliente no formato JSON, contendo os dados solicitados ou mensagens de erro em caso de falha. Serão tratados os possíveis erros e exceções para garantir a consistência e integridade dos dados.
 
+Guia para implementação: 
+
+Para implementar as rotas e operações do sistema CisternaGuardianPB, é necessário seguir os seguintes passos:
+
+Defina as entidades que serão utilizadas na API. Cada entidade deve ter um conjunto de atributos que serão utilizados para armazenar os dados da API. Alguns exemplos de entidades que poderão ser utilizadas no sistema são:
+
+- Obra: armazena os dados de uma obra de construção de cisterna, como o ID, o beneficiário, a associação, a cisterna, as datas de início e término previsto, o valor previsto, o status e os problemas encontrados.
+
+- Fiscalização: armazena os dados de uma fiscalização de uma obra de cisterna, como o ID, o ID da obra, a data da fiscalização, os itens verificados e os documentos comprovativos.
+
+- Beneficiário: armazena os dados de um beneficiário de uma cisterna, como o ID, o nome, o CPF, o contato, a associação, a escolaridade, o gênero, a renda e a quantidade de membros na família.
+
+- Defina as rotas que serão utilizadas na API. Cada rota deve corresponder a uma operação específica, como listar todas as obras, cadastrar uma nova obra, obter os detalhes de uma obra específica, atualizar os dados de uma obra ou excluir uma obra. Alguns exemplos de rotas que poderão ser utilizadas no sistema são:
+
+GET /api/obras: lista todas as obras cadastradas no sistema.
+
+POST /api/obras: cadastra uma nova obra no sistema.
+
+GET /api/obras/{id}: obtém os detalhes de uma obra específica, pelo seu ID.
+
+PUT /api/obras/{id}: atualiza os dados de uma obra específica, pelo seu ID.
+
+DELETE /api/obras/{id}: exclui uma obra específica, pelo seu ID.
+
+Defina as operações que serão realizadas em cada rota. Cada operação deve corresponder a uma função específica, como listar todas as obras, cadastrar uma nova obra, obter os detalhes de uma obra específica, atualizar os dados de uma obra ou excluir uma obra. Alguns exemplos de operações que poderão ser realizadas no sistema são:
+
+
+
 # Testes e validação: 
 
 # Publicação e documentação:
