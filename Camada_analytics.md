@@ -26,3 +26,20 @@ Para criar tópicos de BI Analytics para analisar as obras de cisternas e fiscal
 - Utilização das cisternas: monitoramento da utilização das cisternas por beneficiário, para avaliar a eficácia das obras em termos de suprimento de água.
 
 - Fiscalização: análise dos dados de fiscalização das obras de cisterna, incluindo tempo gasto em cada etapa, problemas encontrados e documentação necessária.
+
+Identifique as métricas importantes para acompanhar o progresso das obras de cisternas e das fiscalizações. Algumas opções podem incluir:
+- Número de obras iniciadas e concluídas.
+- Número de cisternas instaladas.
+- Custo total das obras.
+- Tempo médio de conclusão das obras.
+- Número de problemas encontrados durante as obras.
+- Taxa de conformidade das obras com os padrões estabelecidos.
+- Crie dashboards para visualizar essas métricas de maneira clara e intuitiva. Você pode usar gráficos, tabelas e outros elementos visuais para facilitar a compreensão dos dados.
+
+- Defina objetivos de negócio para cada uma dessas métricas e crie indicadores de desempenho (KPIs) para acompanhá-los. Por exemplo, você pode definir o objetivo de reduzir o custo médio das obras em 10% ao ano e criar um KPI para acompanhar o progresso em relação a esse objetivo.
+
+- Use ferramentas de B.I. para coletar, armazenar e processar os dados das obras de cisternas e das fiscalizações. Algumas opções populares incluem o Tableau, o Power BI e o Google Analytics.
+
+- Crie relatórios automatizados para acompanhar o progresso das obras e das fiscalizações e compartilhe esses relatórios com os responsáveis pelo projeto. Isso pode ajudar a identificar problemas rapidamente e tomar medidas para resolvê-los.
+
+- Use os dados coletados para tomar decisões informadas sobre como melhorar o processo de construção das cisternas e de fiscalização. Por exemplo, você pode identificar padrões nos problemas encontrados durante as obras e implementar medidas preventivas para evitá-los no futuro.
