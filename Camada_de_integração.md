@@ -174,16 +174,18 @@ Content-Type: application/json; charset=utf-8
   "progresso": 75,
   "data_prevista_termino": "2022-12-31",
   "dias_restantes": 60,
-  "fase_atual": "escavação",
+  "fase_atual": "paredes",
   "fases_concluidas": [
-    "projeto",
-    "licenciamento",
-    "escavação"
-  ],
-  "fases_pendentes": [
-    "fundação",
+    "especificações tecnicas",
     "estrutura",
+   ],
+  "fases_pendentes": [
+    "paredes",
+    "revestimento",
+    "instalçaõ hidraulica", 
     "acabamento"
+    "teste",
+    "termo assinado"  
   ],
   "problemas_encontrados": [
     "Atraso na entrega de materiais",
