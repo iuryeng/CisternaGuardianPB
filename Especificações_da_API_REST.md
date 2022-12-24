@@ -58,7 +58,8 @@ Defina as entidades que serão utilizadas na API. Cada entidade deve ter um conj
 - Beneficiário: armazena os dados de um beneficiário de uma cisterna, como o ID, o nome, o CPF, o contato, a associação, a escolaridade, o gênero, a renda e a quantidade de membros na família.
 
 
-## Rotas Obras
+## Rotas de Obras
+
 | Método | Rota           | Descrição                                             |                            
 | -------|----------------| ------------------------------------------------------|
 |GET     | /api/obras     | lista todas as obras cadastradas no sistema.          |
@@ -81,6 +82,52 @@ Para atualizar os dados de uma obra específica, será utilizada a rota PUT /obr
 
 Para excluir uma obra específica, será utilizada a rota DELETE /obras/{id}, onde o ID é o identificador da obra desejada. Essa rota não deverá retornar nenhum dado.
 
+
+Para implementar a rota /obras no sistema CisternaGuardianPB, os seguintes passos podem ser seguidos:
+
+- Crie uma entidade Obra, com os atributos necessários para representar as informações de uma obra no banco de dados.
+
+- Crie um repositório ObraRepository, responsável por realizar as operações de persistência de Obra no banco de dados.
+
+- Crie um serviço ObraService, responsável por realizar as regras de negócio relacionadas à Obra.
+
+- Crie um controlador ObraController, responsável por expor as rotas da API REST para o gerenciamento de Obra.
+
+- Na classe ObraController, crie os métodos HTTP GET, POST, PUT e DELETE para as rotas /obras, seguindo as especificações do projeto.
+
+- Teste as rotas da API REST para garantir que elas estão funcionando corretamente.
+
+## Rotas de Cisternas
+
+Para implementar as operações da rota cisterna no sistema CisternaGuardianPB, pode-se utilizar as seguintes rotas:
+
+| Método | Rota                                    | Descrição                                                       |                                     
+| -------|-----------------------------------------| ----------------------------------------------------------------|
+|GET     | /api/cisternas                          |lista todas as cisternas cadastradas no sistema.                 |
+|POST    | /api/cisternas                          | cadastra uma nova cisterna no sistema.                          |
+|GET     | /api/cisternas/{id}                     | obtém os detalhes de uma cisterna específica, pelo seu ID.      |
+|PUT     |/api/cisternas/{id}                      | atualiza os dados de uma cisterna específica, pelo seu ID.      |
+|DELETE  | /api/cisternas/{id}                     | exclui uma cisterna específica, pelo seu ID.                    |
+|GET     |api/cisternas/{id}/checklist_fiscalizacao| obtém o checklist de fiscalização de uma cisterna específica.   |
+|PUT     |api/cisternas/{id}/checklist_fiscalizacao| atualiza o checklist de fiscalização de uma cisterna específica.|
+|POST    |api/cisternas/{id}/arquivos              | adiciona um arquivo relacionado à cisterna específica.          |
+|DELETE |api/cisternas/{id}/arquivos/{arquivo_id}  | exclui um arquivo relacionado à cisterna específica.            |
+
+Para implementar a rota /cisternas no sistema CisternaGuardianPB, é necessário seguir os seguintes passos:
+
+- Criar a entidade Cisterna, com os atributos necessários para armazenar as informações da cisterna, como o tipo de cisterna, as especificações, a capacidade, entre outros.
+
+- Criar o repositório de Cisterna, utilizando a interface MongoRepository, para realizar as operações de CRUD na coleção de cisternas no banco de dados.
+
+- Criar o service de Cisterna, responsável por chamar os métodos do repositório e realizar as lógicas de negócio, como validações e cálculos.
+
+- Criar o controller de Cisterna, que será o ponto de entrada da API para a rota /cisternas. Neste controller, devem ser implementados os métodos HTTP para as operações de listagem, cadastro, atualização e exclusão de cisternas.
+
+
+
+Testar as operações da rota /cisternas, utilizando ferramentas como o Postman ou o curl.
+
+Documentar a rota /cisternas, incluindo a descrição dos métodos, parâmetros de entrada e saída, entre outras informações relevantes.
 
 
 # Testes e validação: 
