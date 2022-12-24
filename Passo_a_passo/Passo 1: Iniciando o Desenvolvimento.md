@@ -24,4 +24,7 @@ Dependencias iniciais usadas no projeto Spring Initializr:
 
 - Springfox Swagger UI: Essa dependência é utilizada para fornecer a interface web de visualização da documentação gerada pelo Springfox Swagger. Ela é importante para que os desenvolvedores possam visualizar e testar as rotas da API de forma mais intuitiva.
 
+Um passo adiante: 
+Experimente instale e utilizar a CLI do spring https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started.installing.cli.scoop
+
 
