@@ -222,6 +222,57 @@ Content-Type: application/json; charset=utf-8
 
 Esses dados podem ser utilizados para monitorar o progresso da obra e garantir que ela esteja sendo realizada de acordo com o planejado, além de permitir a fiscalização da execução da obra pelas entidades responsáveis.
 
+URL: https://meuservidor.com/obra/123/cisterna
+
+``` lang-js
+
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+{
+  "id": 1,
+  "lote_id": 123,
+  "beneficiario_id": 456,
+  "capacidade": 10000,
+  "diametro": 2.5,
+  "altura": 3.5,
+  "data_inicio": "2022-01-01",
+  "data_conclusao": "2022-12-31",
+  "status": "em execução",
+  "problemas_encontrados": [],
+  "comentarios": "",
+  "checklist_fiscalizacao": [
+    {
+      "id": 1,
+      "etapa": "Licenças e taxas",
+      "descricao": "Verificação de todas as licenças e taxas necessárias para a construção da cisterna",
+      "documento_comprovante": "https://example.com/comprovante.pdf",
+      "check": true
+    },
+    {
+      "id": 2,
+      "etapa": "Instalação do canteiro de obra",
+      "descricao": "Verificação da instalação do canteiro de obra, incluindo a presença de barracas, banheiros e área de alimentação",
+      "documento_comprovante": "https://example.com/comprovante.pdf",
+      "check": true
+    },
+    {
+      "id": 3,
+      "etapa": "Limpeza do terreno",
+      "descricao": "Verificação da limpeza do terreno, remoção de obstáculos e preparação para a escavação",
+      "documento_comprovante": "https://example.com/comprovante.pdf",
+      "check": true
+    },
+    ...
+  ]
+}
+
+```
+
+
+
+
+
+
 
 
 
