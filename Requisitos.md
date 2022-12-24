@@ -36,4 +36,22 @@ Requisitos funcionais:
 
 - Gerenciamento de documentação: o sistema deve permitir armazenar e gerenciar documentos relevantes para o projeto, como contratos, relatórios técnicos e outros documentos.
 
+Requisitor não funcionais:
+
+- Disponibilidade: o sistema deve estar disponível para uso a maior parte do tempo, com tempo de inatividade mínimo para manutenção ou atualizações.
+
+- Escalabilidade: o sistema deve ser capaz de lidar com um aumento na demanda de usuários ou dados sem perda de desempenho.
+
+- Segurança: o sistema deve proteger os dados dos usuários e garantir a privacidade das informações. Isso pode incluir medidas de segurança como autenticação de usuário, criptografia de dados e proteção contra ataques cibernéticos.
+
+- Desempenho: o sistema deve responder rapidamente às solicitações dos usuários e carregar páginas de maneira rápida e eficiente.
+
+- Compatibilidade: o sistema deve ser compatível com diferentes plataformas e navegadores de internet.
+
+- Facilidade de uso: o sistema deve ser fácil de usar e compreender para todos os usuários, independentemente de sua habilidade técnica.
+
+- Testabilidade: o sistema deve ser fácil de testar e validar para garantir sua qualidade e confiabilidade.
+
+- Manutenção: o sistema deve ser fácil de manter e atualizar para garantir sua disponibilidade e desempenho a longo prazo.
+
 
