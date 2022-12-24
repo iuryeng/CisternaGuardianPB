@@ -57,7 +57,8 @@ Defina as entidades que serão utilizadas na API. Cada entidade deve ter um conj
 
 - Beneficiário: armazena os dados de um beneficiário de uma cisterna, como o ID, o nome, o CPF, o contato, a associação, a escolaridade, o gênero, a renda e a quantidade de membros na família.
 
-- Defina as rotas que serão utilizadas na API. Cada rota deve corresponder a uma operação específica, como listar todas as obras, cadastrar uma nova obra, obter os detalhes de uma obra específica, atualizar os dados de uma obra ou excluir uma obra. Alguns exemplos de rotas que poderão ser utilizadas no sistema são:
+
+## Rotas Obras
 
 GET /api/obras: lista todas as obras cadastradas no sistema.
 
@@ -70,6 +71,16 @@ PUT /api/obras/{id}: atualiza os dados de uma obra específica, pelo seu ID.
 DELETE /api/obras/{id}: exclui uma obra específica, pelo seu ID.
 
 Defina as operações que serão realizadas em cada rota. Cada operação deve corresponder a uma função específica, como listar todas as obras, cadastrar uma nova obra, obter os detalhes de uma obra específica, atualizar os dados de uma obra ou excluir uma obra. Alguns exemplos de operações que poderão ser realizadas no sistema são:
+
+listar obras: retorna uma lista com todas. Para listar todas as obras cadastradas no sistema, será criada a rota GET /obras. Essa rota retornará uma lista de objetos Obra, com todas as informações cadastradas para cada uma delas.
+
+Para cadastrar uma nova obra, será utilizada a rota POST /obras, enviando no corpo da requisição um objeto Obra com todas as informações necessárias para o cadastro. Essa rota deverá retornar o objeto Obra cadastrado, com o ID gerado pelo banco de dados.
+
+Para obter os detalhes de uma obra específica, será utilizada a rota GET /obras/{id}, onde o ID é o identificador da obra desejada. Essa rota deverá retornar um objeto Obra com as informações da obra desejada.
+
+Para atualizar os dados de uma obra específica, será utilizada a rota PUT /obras/{id}, enviando no corpo da requisição um objeto Obra com as informações atualizadas. Essa rota deverá retornar o objeto Obra atualizado.
+
+Para excluir uma obra específica, será utilizada a rota DELETE /obras/{id}, onde o ID é o identificador da obra desejada. Essa rota não deverá retornar nenhum dado.
 
 
 
