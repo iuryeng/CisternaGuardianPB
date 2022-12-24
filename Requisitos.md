@@ -30,6 +30,10 @@ Requisitos funcionais:
 
 - Acesso a informações em tempo real: o sistema deve permitir que os usuários acessem facilmente as informações relevantes sobre as cisternas e o progresso da obra, de maneira a facilitar a tomada de decisões e a resolução de problemas.
 
-- Análise de gráficos: o sistema deve permitir gerar gráficos e outras visualizações de dados que possam ajudar a entender o progresso da obra, o uso de recursos e outros aspectos importantes do pro
+- Análise de gráficos: o sistema deve permitir gerar gráficos e outras visualizações de dados que possam ajudar a entender o progresso da obra, o uso de recursos e outros aspectos importantes do projeto
+
+- Aceleração do processo de entrega de recursos: o sistema deve permitir avaliar de maneira mais rápida o cumprimento dos requisitos exigidos pelo projeto, incluindo o cumprimento de padrões de qualidade, acelerando o processo de entrega de recursos às empresas licitadas.
+
+- Gerenciamento de documentação: o sistema deve permitir armazenar e gerenciar documentos relevantes para o projeto, como contratos, relatórios técnicos e outros documentos.
 
 
