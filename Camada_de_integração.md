@@ -13,3 +13,25 @@ A integração do sistema será fetia atraves de um API Rest escrita em Java uti
 - Gerenciamento de documentos: esta funcionalidade é responsável por permitir que os documentos relevantes para o projeto sejam armazenados e gerenciados, incluindo contratos, relatórios técnicos e outros documentos.
 
 - Notificações: esta funcionalidade é responsável por enviar notificações por e-mail ou outros meios para os usuários relevantes sobre alterações no progresso da obra, alertas de segurança e outras informações importantes.
+
+
+# Rotas da API REST:
+
+1. Progresso da Obra:  
+
+Uma possível rota da API REST para monitoramento do progresso da obra poderia ser:
+
+`GET /api/obras/{id}/progresso`
+
+Essa rota poderia ser utilizada para consultar o progresso atual de uma obra específica, identificada pelo ID da obra. Ela retornaria um objeto JSON com informações sobre o progresso da obra, como porcentagem de conclusão, data prevista de término, problemas encontrados e outros dados relevantes.
+
+Por exemplo, a seguinte requisição HTTP:
+O objeto JSON retornado pela rota de monitoramento do progresso da obra poderia incluir os seguintes campos:
+
+- id: o ID da obra.
+- progresso: a porcentagem de conclusão da obra, em formato inteiro (por exemplo, 50 para 50%).
+- data_prevista_termino: a data prevista para o término da obra, no formato "YYYY-MM-DD".
+- status: o status atual da obra, que pode ser "não iniciada", "em execução", "paralisada" ou "concluída".
+- problemas_encontrados: uma lista de problemas encontrados durante a execução da obra, se houver.
+- comentarios: um campo de texto livre para comentários adicionais sobre o progresso da obra.
+- arquivos: uma lista de arquivos anexados ao registro do progresso da obra, como fotos, vídeos ou relatórios técnicos. Cada item da lista pode conter informações sobre o arquivo, como nome, tipo e URL de download.
