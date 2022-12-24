@@ -25,21 +25,28 @@ Uma possível rota da API REST para monitoramento do progresso da obra poderia s
 
 Essa rota poderia ser utilizada para consultar o progresso atual de uma obra específica, identificada pelo ID da obra. Ela retornaria um objeto JSON com informações sobre o progresso da obra, como porcentagem de conclusão, data prevista de término, problemas encontrados e outros dados relevantes.
 
+Diagrama UML:
+
+![Nome da Imagem](/Assets/progresso_uml_json.svg)
+
 Por exemplo, a seguinte requisição HTTP:
 O objeto JSON retornado pela rota de monitoramento do progresso da obra poderia incluir os seguintes campos:
 
-| Campo          | Tipo    | Descrição                                                                                                                   |
-|----------------|---------|-----------------------------------------------------------------------------------------------------------------------------|
-| `id`           | Integer | O ID da obra.                                                                                                              |
-| `progresso`    | Integer | A porcentagem de conclusão da obra, em formato inteiro (por exemplo, 50 para 50%).                                        |
-| `data_prevista_termino` | Date   | A data prevista para o término da obra, no formato "YYYY-MM-DD".                                                     |
-| `status`       | Enum    | O status atual da obra, que pode ser "não iniciada", "em execução", "paralisada" ou "concluída".                           |
-| `problemas_encontrados` | Array  | Uma lista de problemas encontrados durante a execução da obra, se houver.                                             |
-| `comentarios`  | String  | Um campo de texto livre para comentários adicionais sobre o progresso da obra.                                            |
-| `visitas_feitas` | Integer | O número de visitas realizadas à obra.                                                                                   |
-| `data_visitas` | Array   | Uma lista com as datas das visitas realizadas à obra.                                                                      |
-| `tecnico_responsavel` | String | O nome do técnico responsável pelas visitas à obra.                                                                     |
-| `arquivos`     | Array   | Uma lista de arquivos anexados ao registro do progresso da obra, como fotos, vídeos ou relatórios técnicos. Cada item da lista pode conter informações sobre o arquivo, como nome, tipo e URL de download. |
+| Propriedade          | Tipo             | Descrição                                              |
+| -------------------- | ---------------- | ------------------------------------------------------ |
+| id                   | número inteiro   | ID do projeto                                         |
+| progresso            | número inteiro   | Progresso atual do projeto (em %)                     |
+| data_prevista_termino | string           | Data prevista para o término do projeto (formato YYYY-MM-DD) |
+| dias_restantes       | número inteiro   | Número de dias restantes para o término do projeto   |
+| fase_atual           | string           | Fase atual do projeto                                 |
+| fases_concluidas     | array de strings | Fases concluídas do projeto                           |
+| fases_pendentes      | array de strings | Fases pendentes do projeto                            |
+| problemas_encontrados | array de strings | Problemas encontrados no projeto                      |
+| status_atual         | string           | Status atual do projeto                               |
+| tipos_status_possiveis | array de strings | Tipos de status possíveis para o projeto              |
+| visitas_feitas       | número inteiro   | Número de visitas realizadas no projeto              |
+| data_visitas         | array de strings | Datas das visitas realizadas no projeto (formato YYYY-MM-DD) |
+| arquivos             | array de objetos | Arquivos relacionados ao projeto                     |
 
 
 Abaixo segue um exemplo de uma resposta HTTP para a requisição GET na rota /api/obras/123/progresso:
@@ -54,19 +61,35 @@ Content-Type: application/json; charset=utf-8
   "id": 123,
   "progresso": 75,
   "data_prevista_termino": "2022-12-31",
-  "status": "em execução",
+  "dias_restantes": 60,
+  "fase_atual": "escavação",
+  "fases_concluidas": [
+    "projeto",
+    "licenciamento",
+    "escavação"
+  ],
+  "fases_pendentes": [
+    "fundação",
+    "estrutura",
+    "acabamento"
+  ],
   "problemas_encontrados": [
     "Atraso na entrega de materiais",
     "Falta de mão de obra qualificada"
   ],
-  "comentarios": "Obra progredindo de acordo com o planejado, mas enfrentando alguns problemas logísticos e de recursos humanos.",
+  "status_atual": "em andamento",
+  "tipos_status_possiveis": [
+    "iniciado",
+    "paralisado",
+    "em andamento",
+    "concluido"
+  ],
   "visitas_feitas": 3,
   "data_visitas": [
     "2022-01-15",
     "2022-03-01",
     "2022-05-20"
   ],
-  "tecnico_responsavel": "João da Silva",
   "arquivos": [
     {
       "nome": "foto_obra_1.jpg",
@@ -79,6 +102,7 @@ Content-Type: application/json; charset=utf-8
       "url": "https://meuservidor.com/arquivos/video_obra_1.mp4"
     }
   ]
+
 }
 
 
