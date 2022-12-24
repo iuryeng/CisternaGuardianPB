@@ -1,6 +1,6 @@
 # CisternaGuardianPB
 
-A estrutura da API Rest do sistema CisternaGuardianPB inclue os seguintes módulos ou funcionalidades:
+A integração do sistema será fetia atraves de um API Rest escrita em Java utilizando o framework SpringBoot. A estrutura da API Rest do sistema CisternaGuardianPB inclue os seguintes módulos ou funcionalidades:
 
 - Autenticação e autorização: esta funcionalidade é responsável por garantir que apenas usuários autorizados tenham acesso às funcionalidades da API. Ela pode ser implementada utilizando técnicas de autenticação, como o uso de tokens de acesso ou credenciais de usuário.
 
