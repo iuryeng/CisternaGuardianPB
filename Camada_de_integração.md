@@ -17,7 +17,7 @@ A integração do sistema será fetia atraves de um API Rest escrita em Java uti
 
 # Rotas da API REST:
 
-## Obras
+## Obra:
 Para obter os detalhes de uma obra específica, é necessário enviar uma requisição HTTP GET para a rota /api/obras/{id}.
 
 Exemplo de requisição:
@@ -38,6 +38,27 @@ Diagrama UML:
 
 ![Nome da Imagem](/Assets/obra_uml_json.svg)
 
+| Propriedade          | Tipo             | Descrição                                               |
+| -------------------- | ---------------- | ------------------------------------------------------ |
+|  id	                 |  int	            |  O ID da obra                                           |  
+|  beneficiario_id	   |  int	            |  O ID do beneficiário associado à obra                  |  
+|  associacao_id	     |  int	            |  O ID da associação associada à obra                    |  
+|  cisterna_id	       |  int	            |  O ID da cisterna associada à obra                      |  
+|  progresso_id        |  int             |  O ID do progresso da obra                              |  
+|  data_inicio	       |  date	          |  A data de início da obra                               |  
+|  data_prevista_termino	|  date	        |  A data prevista para o término da obra                 |  
+|  valor_previsto	        |  float	      |  O valor previsto para a conclusão da obra              |   
+|  tecnico_responsavel    |  string	      |  O técnico encarregado da empresa responsável pela obra |  
+|  arquivos	              |  array	      |  Uma lista de arquivos anexados à obra                  |  
+|  endereco	              |  string	      |  O endereço da obra                                     |  
+|  municipio	            |  string	      |  O município da obra                                    |  
+|  comunidade	            |  string	      |  A comunidade da obra                                   |  
+|  contrato	              |  string	      |  O número do contrato da obra                           |  
+|  empresa	              |  string	      |  A empresa responsável pela execução da obra            |  
+|  lote	                  |  string	      |  O lote da obra                                         |  
+|  encarregado_tecnico	  |  string	      |  O encarregado técnico da empresa                       | 
+|  tecnicos_cooperar	    |   array	      |  Uma lista de técnicos do Cooperar envolvidos na obra   |  
+|  documentos	            |  array	      |  Uma lista de documentos e arquivos importantes da obra |  
 
 ## Progresso da Obra:  
 
@@ -51,7 +72,7 @@ URL: https://meuservidor.com/obra/123/progresso
 Resposta
 Status: 200 OK
 
-Corpo da resposta:
+Corpo da requisção:
 
 `GET /api/obras/{id}/progresso`
 
