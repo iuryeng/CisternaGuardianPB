@@ -9,6 +9,8 @@ Para construir o ambiente de desenvolvimento do sistema CisternaGuardianPB, siga
 - [ ] Crie um novo projeto Spring Boot usando a ferramenta de linha de comando "Spring Initializr" ou utilizando a interface web em https://start.spring.io/. Selecione o módulo "MongoDB" na aba "Dependencies".
 - [ ] Configurar as informações de conexão do MongoDB no arquivo application.properties 
 - [ ] Importe o projeto criado em sua IDE de preferência (Eclipse, IntelliJ, etc).
+- [ ] Configure as propriedades do banco de dados no arquivo application.properties. 
+- [ ] Teste a conexao com o banco de dados
 
 
 Dependencias iniciais usadas no projeto Spring Initializr:
