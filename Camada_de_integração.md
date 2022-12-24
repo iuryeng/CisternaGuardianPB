@@ -17,6 +17,23 @@ A integração do sistema será fetia atraves de um API Rest escrita em Java uti
 
 # Rotas da API REST:
 
+## Obras
+Para obter os detalhes de uma obra específica, é necessário enviar uma requisição HTTP GET para a rota /api/obras/{id}.
+
+Exemplo de requisição:
+
+Requisição
+Método: GET
+
+URL: https://meuservidor.com/obra/123
+
+Resposta
+Status: 200 OK
+
+Corpo da resposta:
+
+`GET /api/obra/{id}/`
+
 ## Progresso da Obra:  
 
 Uma possível rota da API REST para monitoramento do progresso da obra poderia ser:
