@@ -232,7 +232,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
 {
   "id": 1,
+   "localidade": {
+    "latitude": -23.56789,
+    "longitude": -46.12345
+  },
   "especificacoes": {
+      "tipo": "de placas",
       "volume_util": 10000,
       "altura_util": 3,
       "altura_total": 5,
@@ -264,7 +269,24 @@ Content-Type: application/json; charset=utf-8
       "documento_comprovante": "https://example.com/comprovante.pdf",
       "check": true
     },
-    ...
+    {
+      "id": 4,
+      "etapa": "Localização e marcação da obra",
+      "descricao": "Verificação da correta localização e marcação do local da cisterna.",
+      "documento_comprovante": "Fotos da marcação do local da cisterna."
+    },
+    {
+      "id": 5,
+      "etapa": "Escavação",
+      "descricao": "Verificação da execução adequada da escavação para a cisterna.",
+      "documento_comprovante": "Fotos da escavação da cisterna."
+    },
+    {
+      "id": 6,
+      "etapa": "Reaterro",
+      "descricao": "Verificação do reaterro adequado após a escavação da cisterna.",
+      "documento_comprovante": "Fotos do reaterro após a escavação da cisterna."
+    }
   ]
 }
 
