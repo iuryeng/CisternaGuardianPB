@@ -7,7 +7,6 @@ Para construir o ambiente de desenvolvimento do sistema CisternaGuardianPB, siga
 - [ ] Instale o servidor MongoDB, baixando e instalando a última versão disponível em https://www.mongodb.com/download-center/community.
 - [ ] Configure o MongoDB para iniciar automaticamente no boot do sistema e inicie o servidor.
 - [ ] Crie um novo projeto Spring Boot usando a ferramenta de linha de comando "Spring Initializr" ou utilizando a interface web em https://start.spring.io/. Selecione o módulo "MongoDB" na aba "Dependencies".
-- [ ] Configurar as informações de conexão do MongoDB no arquivo application.properties 
 - [ ] Importe o projeto criado em sua IDE de preferência (Eclipse, IntelliJ, etc).
 - [ ] Configure as propriedades do banco de dados no arquivo application.properties. 
 - [ ] Teste a conexao com o banco de dados
