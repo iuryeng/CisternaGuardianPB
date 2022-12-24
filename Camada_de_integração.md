@@ -17,7 +17,7 @@ A integração do sistema será fetia atraves de um API Rest escrita em Java uti
 
 # Rotas da API REST:
 
-1. Progresso da Obra:  
+## Progresso da Obra:  
 
 Uma possível rota da API REST para monitoramento do progresso da obra poderia ser:
 
@@ -117,10 +117,6 @@ Content-Type: application/json; charset=utf-8
 
 
 ```
-
-sucesso e os dados foram retornados no corpo da resposta, no formato JSON. A propriedade Content-Type informa o tipo de conteúdo retornado, que no caso é aplicação/JSON.
-
-Além disso, no corpo da resposta são retornados os dados da obra solicitada, conforme descrito na tabela .md anteriormente. São informações como o ID da obra, o progresso, a data prevista para o término, o status atual, os problemas encontrados, os comentários adicionais, as visitas realizadas, as datas das visitas, o técnico responsável e os arquivos anexados ao registro do progresso da obra.
 
 Esses dados podem ser utilizados para monitorar o progresso da obra e garantir que ela esteja sendo realizada de acordo com o planejado, além de permitir a fiscalização da execução da obra pelas entidades responsáveis.
 
