@@ -28,10 +28,12 @@ Essa rota poderia ser utilizada para consultar o progresso atual de uma obra esp
 Por exemplo, a seguinte requisição HTTP:
 O objeto JSON retornado pela rota de monitoramento do progresso da obra poderia incluir os seguintes campos:
 
-- id: o ID da obra.
-- progresso: a porcentagem de conclusão da obra, em formato inteiro (por exemplo, 50 para 50%).
-- data_prevista_termino: a data prevista para o término da obra, no formato "YYYY-MM-DD".
-- status: o status atual da obra, que pode ser "não iniciada", "em execução", "paralisada" ou "concluída".
-- problemas_encontrados: uma lista de problemas encontrados durante a execução da obra, se houver.
-- comentarios: um campo de texto livre para comentários adicionais sobre o progresso da obra.
-- arquivos: uma lista de arquivos anexados ao registro do progresso da obra, como fotos, vídeos ou relatórios técnicos. Cada item da lista pode conter informações sobre o arquivo, como nome, tipo e URL de download.
+| Campo          | Descrição                                                                                                                   |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------|
+| `id`           | O ID da obra.                                                                                                              |
+| `progresso`    | A porcentagem de conclusão da obra, em formato inteiro (por exemplo, 50 para 50%).                                        |
+| `data_prevista_termino` | A data prevista para o término da obra, no formato "YYYY-MM-DD".                                                     |
+| `status`       | O status atual da obra, que pode ser "não iniciada", "em execução", "paralisada" ou "concluída".                           |
+| `problemas_encontrados` | Uma lista de problemas encontrados durante a execução da obra, se houver.                                             |
+| `comentarios`  | Um campo de texto livre para comentários adicionais sobre o progresso da obra.                                            |
+| `arquivos`     | Uma lista de arquivos anexados ao registro do progresso da obra, como fotos, vídeos ou relatórios técnicos. Cada item da lista pode conter informações sobre o arquivo, como nome, tipo e URL de download. |
