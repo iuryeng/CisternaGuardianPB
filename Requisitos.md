@@ -1,4 +1,4 @@
-# Reuisitos do Sistema CisternaGuardianPB
+# Requisitos do Sistema CisternaGuardianPB
 
 Lista detalhada dos requisitos técnicos e funcionais do sistema CisternaGuardianPB:
 
