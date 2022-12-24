@@ -41,32 +41,55 @@ O objeto JSON retornado pela rota de monitoramento do progresso da obra poderia 
 | `tecnico_responsavel` | String | O nome do técnico responsável pelas visitas à obra.                                                                     |
 | `arquivos`     | Array   | Uma lista de arquivos anexados ao registro do progresso da obra, como fotos, vídeos ou relatórios técnicos. Cada item da lista pode conter informações sobre o arquivo, como nome, tipo e URL de download. |
 
-Abaixo segue o modelo de objeto JSON retornado pela rota de monitoramento do progresso da obra:
+
+Abaixo segue um exemplo de uma resposta HTTP para a requisição GET na rota /api/obras/123/progresso:
+
 
 ``` lang-js
+
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
 {
   "id": 123,
-  "progresso": 50,
+  "progresso": 75,
   "data_prevista_termino": "2022-12-31",
   "status": "em execução",
-  "problemas_encontrados": ["Falta de mão de obra", "Falta de materiais"],
-  "comentarios": "Estamos trabalhando para resolver os problemas mencionados e esperamos concluir a obra até o final do ano.",
+  "problemas_encontrados": [
+    "Atraso na entrega de materiais",
+    "Falta de mão de obra qualificada"
+  ],
+  "comentarios": "Obra progredindo de acordo com o planejado, mas enfrentando alguns problemas logísticos e de recursos humanos.",
   "visitas_feitas": 3,
-  "data_visitas": ["2022-01-01", "2022-02-01", "2022-03-01"],
+  "data_visitas": [
+    "2022-01-15",
+    "2022-03-01",
+    "2022-05-20"
+  ],
   "tecnico_responsavel": "João da Silva",
   "arquivos": [
     {
-      "nome": "foto_01.jpg",
-      "tipo": "imagem/jpeg",
-      "url": "https://example.com/obras/123/foto_01.jpg"
+      "nome": "foto_obra_1.jpg",
+      "tipo": "image/jpeg",
+      "url": "https://meuservidor.com/arquivos/foto_obra_1.jpg"
     },
     {
-      "nome": "relatorio_tecnico.pdf",
-      "tipo": "application/pdf",
-      "url": "https://example.com/obras/123/relatorio_tecnico.pdf"
+      "nome": "video_obra_1.mp4",
+      "tipo": "video/mp4",
+      "url": "https://meuservidor.com/arquivos/video_obra_1.mp4"
     }
   ]
 }
+
+
 ```
+
+sucesso e os dados foram retornados no corpo da resposta, no formato JSON. A propriedade Content-Type informa o tipo de conteúdo retornado, que no caso é aplicação/JSON.
+
+Além disso, no corpo da resposta são retornados os dados da obra solicitada, conforme descrito na tabela .md anteriormente. São informações como o ID da obra, o progresso, a data prevista para o término, o status atual, os problemas encontrados, os comentários adicionais, as visitas realizadas, as datas das visitas, o técnico responsável e os arquivos anexados ao registro do progresso da obra.
+
+Esses dados podem ser utilizados para monitorar o progresso da obra e garantir que ela esteja sendo realizada de acordo com o planejado, além de permitir a fiscalização da execução da obra pelas entidades responsáveis.
+
+
 
 
