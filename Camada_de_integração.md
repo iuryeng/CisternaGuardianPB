@@ -36,7 +36,7 @@ Corpo da resposta:
 
 Diagrama UML:
 
-![Nome da Imagem](/Assets/obra_uml_json.svg)
+![Nome da Imagem](/Assets/Obra_uml_json.svg)
 
 | Propriedade          | Tipo             | Descrição                                               |
 | -------------------- | ---------------- | ------------------------------------------------------ |
