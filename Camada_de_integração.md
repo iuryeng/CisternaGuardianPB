@@ -21,6 +21,16 @@ A integração do sistema será fetia atraves de um API Rest escrita em Java uti
 
 Uma possível rota da API REST para monitoramento do progresso da obra poderia ser:
 
+Requisição
+Método: GET
+
+URL: https://meuservidor.com/obra/123/progresso
+
+Resposta
+Status: 200 OK
+
+Corpo da resposta:
+
 `GET /api/obras/{id}/progresso`
 
 Essa rota poderia ser utilizada para consultar o progresso atual de uma obra específica, identificada pelo ID da obra. Ela retornaria um objeto JSON com informações sobre o progresso da obra, como porcentagem de conclusão, data prevista de término, problemas encontrados e outros dados relevantes.
