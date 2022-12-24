@@ -28,14 +28,22 @@ Algumas vantagens de utilizar Java com Spring Boot para desenvolver a API do Cis
 
 A arquitetura do CisternaGuardianPB pode ser dividida em três camadas principais:
 
-- Camada de apresentação: é responsável por receber as solicitações dos usuários e apresentar os resultados. Pode ser implementada como uma interface web ou aplicativo móvel.
+Camada de Entidade: nesta camada, são definidas as classes de entidade que representam os objetos do sistema. Por exemplo, podemos ter uma classe Obra que representa uma obra de cisterna, uma classe Beneficiario que representa um beneficiário de cisterna, etc. As classes de entidade são anotadas com @Entity e são persistidas no banco de dados através de um repositório de acesso a dados, como o MongoDBRepository.
 
-- Camada de negócio: é onde são implementadas as regras de negócio e lógica do sistema. Pode ser desenvolvida com o framework Java Spring Boot, que oferece diversas ferramentas e bibliotecas para facilitar o desenvolvimento de aplicações web.
+Camada de Serviço: nesta camada, são definidos os serviços que realizam as operações lógicas do sistema. Por exemplo, podemos ter um serviço ObraService que realiza operações de CRUD (criação, leitura, atualização e exclusão) de obras de cisterna, um serviço BeneficiarioService que realiza operações de CRUD de beneficiários, etc. Os serviços são anotados com @Service e são responsáveis por realizar as operações lógicas do sistema, como validações, regras de negócio, etc.
 
-- Camada de dados: é responsável por armazenar e recuperar os dados do sistema. Pode ser implementada com um banco de dados NoSQL, como o MongoDB, que é especialmente adequado para aplicações que lidam com grandes quantidades de dados não estruturados.
+Camada de Controlador: nesta camada, são definidos os controladores que expõem a API REST do sistema. Por exemplo, podemos ter um controlador ObraController que expõe rotas para criar, ler, atualizar e excluir obras de cisterna, um controlador BeneficiarioController que expõe rotas para criar, ler, atualizar e excluir beneficiários, etc. Os controladores são anotados com @Controller e são responsáveis por receber as requisições HTTP, chamar os serviços adequados para realizar as operações lógicas e retornar a resposta ao cliente.
 
 
 # Implementação das rotas e operações:
+
+A implementação das rotas e operações do sistema CisternaGuardianPB será realizada através da camada de controllers. Cada controller será responsável por gerenciar as requisições HTTP para uma determinada entidade do sistema, como obras, cisternas, beneficiários, etc.
+
+As rotas serão implementadas seguindo o padrão REST, com os métodos HTTP GET, POST, PUT e DELETE para realizar as operações de listagem, cadastro, atualização e exclusão, respectivamente. Além disso, serão incluídos métodos adicionais, como o GET para obter detalhes de uma entidade específica, por exemplo.
+
+Cada controller conterá os métodos necessários para atender às requisições HTTP para a respectiva entidade, fazendo uso dos serviços da camada de service para realizar as operações de negócio e da camada de repository para acessar o banco de dados.
+
+As respostas das operações serão devolvidas ao cliente no formato JSON, contendo os dados solicitados ou mensagens de erro em caso de falha. Serão tratados os possíveis erros e exceções para garantir a consistência e integridade dos dados.
 
 # Testes e validação: 
 
