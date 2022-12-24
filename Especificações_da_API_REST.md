@@ -59,16 +59,15 @@ Defina as entidades que serão utilizadas na API. Cada entidade deve ter um conj
 
 
 ## Rotas Obras
+| Método | Rota           | Descrição                                             |                            
+| -------|----------------| ------------------------------------------------------|
+|GET     | /api/obras     | lista todas as obras cadastradas no sistema.          |
+|POST    | /api/obras     | cadastra uma nova obra no sistema.                    |
+|GET     | /api/obras/{id}| obtém os detalhes de uma obra específica, pelo seu ID.|
+|PUT     | /api/obras/{id}| atualiza os dados de uma obra específica, pelo seu ID.|
+|DELETE  | /api/obras/{id}| exclui uma obra específica, pelo seu ID.              |
 
-GET /api/obras: lista todas as obras cadastradas no sistema.
 
-POST /api/obras: cadastra uma nova obra no sistema.
-
-GET /api/obras/{id}: obtém os detalhes de uma obra específica, pelo seu ID.
-
-PUT /api/obras/{id}: atualiza os dados de uma obra específica, pelo seu ID.
-
-DELETE /api/obras/{id}: exclui uma obra específica, pelo seu ID.
 
 Defina as operações que serão realizadas em cada rota. Cada operação deve corresponder a uma função específica, como listar todas as obras, cadastrar uma nova obra, obter os detalhes de uma obra específica, atualizar os dados de uma obra ou excluir uma obra. Alguns exemplos de operações que poderão ser realizadas no sistema são:
 
