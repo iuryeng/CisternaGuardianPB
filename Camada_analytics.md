@@ -1,4 +1,4 @@
-## Analystcs no CisternaGuardianPB
+## Analytics no CisternaGuardianPB
 
 O módulo de análise é responsável por processar os dados coletados e gerar relatórios e gráficos que permitam avaliar o progresso e a eficiência da construção.
 Para criar tópicos de BI Analytics para analisar as obras de cisternas e fiscalizações, primeiro seria necessário coletar e armazenar os dados de obras e fiscalizações em um banco de dados. Algumas opções de tópicos de BI Analytics que poderiam ser úteis para análise de obras de cisternas e fiscalizações incluem:
