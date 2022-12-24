@@ -40,6 +40,8 @@ O objeto JSON retornado pela rota de monitoramento do progresso da obra poderia 
 
 Abaixo segue o modelo de objeto JSON retornado pela rota de monitoramento do progresso da obra:
 
+``` lang-js
+]
 {
   "id": 123,
   "progresso": 50,
@@ -60,4 +62,8 @@ Abaixo segue o modelo de objeto JSON retornado pela rota de monitoramento do pro
     }
   ]
 }
+
+
+```
+
 
