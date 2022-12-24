@@ -60,6 +60,65 @@ Diagrama UML:
 |  tecnicos_cooperar	    |   array	      |  Uma lista de técnicos do Cooperar envolvidos na obra   |  
 |  documentos	            |  array	      |  Uma lista de documentos e arquivos importantes da obra |  
 
+Abaixo segue um exemplo de uma resposta HTTP para a requisição GET na rota /api/obra/123
+
+``` lang-js
+
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{
+  "id": 1,
+  "beneficiario_id": 123,
+  "associacao_id": 456,
+  "cisterna_id": 789,
+  "progresso_id": 123,
+  "data_inicio": "2022-01-01",
+  "data_prevista_termino": "2022-12-31",
+  "valor_previsto": 10000,
+  "endereco": {
+    "municipio": "Município A",
+    "comunidade": "Comunidade B"
+  },
+  "contrato": "12345/2022",
+  "empresa": "Empresa X",
+  "lote": "Lote 123",
+  "gerencia": "Gerencia de Água e Saneamento",
+  "documentacao": {
+    "contrato": {
+      "numero": "12345/2022",
+      "data_assinatura": "2022-01-01",
+      "prazo_execucao": "12 meses",
+      "valor": 10000
+    },
+    "licitacao": {
+      "numero": "54321/2021",
+      "data_abertura": "2021-12-31",
+      "empresa_vencedora": "Empresa X"
+    }
+  },
+  "encarregado_tecnico_empresa": "João da Silva",
+  "tecnicos_cooperar": [
+    "Maria Rodrigues",
+    "José Souza"
+  ],
+  "artefatos_documentais": [
+    {
+      "nome": "Plano de Trabalho",
+      "tipo": "PDF",
+      "url": "https://example.com/obras/1/artefatos/plano-de-trabalho.pdf"
+    },
+    {
+      "nome": "Foto da Obra",
+      "tipo": "JPG",
+      "url": "https://example.com/obras/1/artefatos/foto-obra.jpg"
+    }
+  ]
+}
+
+
+ ```
+
 ## Progresso da Obra:  
 
 Uma possível rota da API REST para monitoramento do progresso da obra poderia ser:
