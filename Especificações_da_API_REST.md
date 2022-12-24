@@ -72,15 +72,15 @@ Defina as entidades que serão utilizadas na API. Cada entidade deve ter um conj
 
 Defina as operações que serão realizadas em cada rota. Cada operação deve corresponder a uma função específica, como listar todas as obras, cadastrar uma nova obra, obter os detalhes de uma obra específica, atualizar os dados de uma obra ou excluir uma obra. Alguns exemplos de operações que poderão ser realizadas no sistema são:
 
-listar obras: retorna uma lista com todas. Para listar todas as obras cadastradas no sistema, será criada a rota GET /obras. Essa rota retornará uma lista de objetos Obra, com todas as informações cadastradas para cada uma delas.
+- listar obras: retorna uma lista com todas. Para listar todas as obras cadastradas no sistema, será criada a rota GET /obras. Essa rota retornará uma lista de objetos Obra, com todas as informações cadastradas para cada uma delas.
 
-Para cadastrar uma nova obra, será utilizada a rota POST /obras, enviando no corpo da requisição um objeto Obra com todas as informações necessárias para o cadastro. Essa rota deverá retornar o objeto Obra cadastrado, com o ID gerado pelo banco de dados.
+- Para cadastrar uma nova obra, será utilizada a rota POST /obras, enviando no corpo da requisição um objeto Obra com todas as informações necessárias para o cadastro. Essa rota deverá retornar o objeto Obra cadastrado, com o ID gerado pelo banco de dados.
 
-Para obter os detalhes de uma obra específica, será utilizada a rota GET /obras/{id}, onde o ID é o identificador da obra desejada. Essa rota deverá retornar um objeto Obra com as informações da obra desejada.
+- Para obter os detalhes de uma obra específica, será utilizada a rota GET /obras/{id}, onde o ID é o identificador da obra desejada. Essa rota deverá retornar um objeto Obra com as informações da obra desejada.
 
-Para atualizar os dados de uma obra específica, será utilizada a rota PUT /obras/{id}, enviando no corpo da requisição um objeto Obra com as informações atualizadas. Essa rota deverá retornar o objeto Obra atualizado.
+- Para atualizar os dados de uma obra específica, será utilizada a rota PUT /obras/{id}, enviando no corpo da requisição um objeto Obra com as informações atualizadas. Essa rota deverá retornar o objeto Obra atualizado.
 
-Para excluir uma obra específica, será utilizada a rota DELETE /obras/{id}, onde o ID é o identificador da obra desejada. Essa rota não deverá retornar nenhum dado.
+- Para excluir uma obra específica, será utilizada a rota DELETE /obras/{id}, onde o ID é o identificador da obra desejada. Essa rota não deverá retornar nenhum dado.
 
 
 Para implementar a rota /obras no sistema CisternaGuardianPB, os seguintes passos podem ser seguidos:
@@ -106,12 +106,24 @@ Para implementar as operações da rota cisterna no sistema CisternaGuardianPB, 
 |GET     | /api/cisternas                          |lista todas as cisternas cadastradas no sistema.                 |
 |POST    | /api/cisternas                          | cadastra uma nova cisterna no sistema.                          |
 |GET     | /api/cisternas/{id}                     | obtém os detalhes de uma cisterna específica, pelo seu ID.      |
-|PUT     |/api/cisternas/{id}                      | atualiza os dados de uma cisterna específica, pelo seu ID.      |
+|PUT     | /api/cisternas/{id}                      | atualiza os dados de uma cisterna específica, pelo seu ID.      |
 |DELETE  | /api/cisternas/{id}                     | exclui uma cisterna específica, pelo seu ID.                    |
-|GET     |api/cisternas/{id}/checklist_fiscalizacao| obtém o checklist de fiscalização de uma cisterna específica.   |
-|PUT     |api/cisternas/{id}/checklist_fiscalizacao| atualiza o checklist de fiscalização de uma cisterna específica.|
-|POST    |api/cisternas/{id}/arquivos              | adiciona um arquivo relacionado à cisterna específica.          |
-|DELETE |api/cisternas/{id}/arquivos/{arquivo_id}  | exclui um arquivo relacionado à cisterna específica.            |
+|GET     | /api/cisternas/{id}/checklist_fiscalizacao| obtém o checklist de fiscalização de uma cisterna específica.   |
+|PUT     | /api/cisternas/{id}/checklist_fiscalizacao| atualiza o checklist de fiscalização de uma cisterna específica.|
+|POST    | /api/cisternas/{id}/arquivos              | adiciona um arquivo relacionado à cisterna específica.          |
+|DELETE  | /api/cisternas/{id}/arquivos/{arquivo_id}  | exclui um arquivo relacionado à cisterna específica.            |
+
+Essas operações permitem que o sistema CisternaGuardianPB tenha as seguintes funcionalidades:
+
+- Listar todas as cisternas: permitir que o usuário visualize a lista de todas as cisternas cadastradas no sistema, incluindo informações como o ID, localização, beneficiário e status da cisterna.
+
+- Cadastrar uma nova cisterna: permitir que o usuário insira os dados de uma nova cisterna no sistema, como o ID do beneficiário, localização, especificações e status da cisterna.
+
+- Obter detalhes de uma cisterna: permitir que o usuário visualize os detalhes de uma cisterna específica, incluindo informações como o ID, localização, beneficiário, especificações e status da cisterna.
+
+- Atualizar dados de uma cisterna: permitir que o usuário altere os dados de uma cisterna específica, como o ID do beneficiário, localização, especificações e status da cisterna.
+
+- Excluir uma cisterna: permitir que o usuário exclua uma cisterna específica do sistema, incluindo todas as informações relacionadas à cisterna, como o ID, localização, beneficiário, especificações e status da cisterna.
 
 Para implementar a rota /cisternas no sistema CisternaGuardianPB, é necessário seguir os seguintes passos:
 
