@@ -40,6 +40,7 @@ O objeto JSON retornado pela rota de monitoramento do progresso da obra poderia 
 | `data_visitas` | Uma lista com as datas das visitas realizadas à obra.                                                                      |
 | `tecnico_responsavel` | O nome do técnico responsável pelas visitas à obra.                                                                     |
 | `arquivos`     | Uma lista de arquivos anexados ao registro do progresso da obra, como fotos, vídeos ou relatórios técnicos. Cada item da lista pode conter informações sobre o arquivo, como nome, tipo e URL de download. |
+
 Abaixo segue o modelo de objeto JSON retornado pela rota de monitoramento do progresso da obra:
 
 ``` lang-js
