@@ -34,6 +34,11 @@ Corpo da resposta:
 
 `GET /api/obra/{id}/`
 
+Diagrama UML:
+
+![Nome da Imagem](/Assets/obra_uml_json.svg)
+
+
 ## Progresso da Obra:  
 
 Uma possível rota da API REST para monitoramento do progresso da obra poderia ser:
