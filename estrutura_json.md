@@ -73,58 +73,82 @@
   "beneficiario": "FRANCISCO BEZERRA DE ALBUQUERQUE",
   "itens": [
     {
-      "item": "1.00",
-      "descricao": "Serviços Preeliminares",
-      "unidade": "",
-      "quantidade": "",
-      "preco_unitario": "",
-      "preco_total": "541.61",
-      "primeira_medicao": {
-        "porcentagem_executada": "100.00%",
-        "valor": "541.61"
-      },
-      "segunda_medicao": {
-        "porcentagem_executada": "0.00%",
-        "valor": "-"
-      },
-      "acumulado": {
-        "porcentagem_executada": "100.00%",
-        "valor": "541.61"
-      }
+      "numero": "1",
+      "descricao": "Serviços Preliminares",
+      "unidade": "m²",
+      "quantidade": 150,
+      "preco_unitario": 10.5,
+      "valor_total": 1575,
+      "subitens": [
+        {
+          "numero": "1.1",
+          "descricao": "Locação de Obra",
+          "unidade": "m²",
+          "quantidade": 150,
+          "preco_unitario": 2.5,
+          "valor_total": 375
+        },
+        {
+          "numero": "1.2",
+          "descricao": "Placa de obra",
+          "unidade": "un",
+          "quantidade": 1,
+          "preco_unitario": 120,
+          "valor_total": 120
+        },
+        {
+          "numero": "1.3",
+          "descricao": "Cerca de Obra",
+          "unidade": "m²",
+          "quantidade": 150,
+          "preco_unitario": 4,
+          "valor_total": 600
+        }
+      ]
     },
     {
-      "item": "1.01",
-      "descricao": "Licenças e taxas",
-      "unidade": "unid.",
-      "quantidade": "1.00",
-      "preco_unitario": "312.00",
-      "preco_total": "312.00",
-      "primeira_medicao": {
-        "porcentagem_executada": "100.00%",
-        "valor": "312.00"
-      },
-      "segunda_medicao": {
-        "porcentagem_executada": "0.00%",
-        "valor": "0.00"
-      },
-      "acumulado": {
-        "porcentagem_executada": "100.00%",
-        "valor": "312.00"
-      }
-    },
-    // outros itens omitidos por brevidade
+      "numero": "2",
+      "descricao": "Serviços de Terraplanagem",
+      "unidade": "m³",
+      "quantidade": 300,
+      "preco_unitario": 8.5,
+      "valor_total": 2550,
+      "subitens": [
+        {
+          "numero": "2.1",
+          "descricao": "Corte de terreno",
+          "unidade": "m³",
+          "quantidade": 100,
+          "preco_unitario": 5,
+          "valor_total": 500
+        },
+        {
+          "numero": "2.2",
+          "descricao": "Aterro Compactado",
+          "unidade": "m³",
+          "quantidade": 200,
+          "preco_unitario": 12,
+          "valor_total": 2400
+        }
+      ]
+    }
   ],
   "total": {
-    "valor_total": "7366.90",
-    "porcentagem_executada": "85.42%",
-    "valor_executado": "6292.82"
+    "valor_total_itens": 4125,
+    "descontos": 0,
+    "acrescimos": 0,
+    "valor_total": 4125
   },
   "total_bdi": {
-    "valor_total": "8840.28",
-    "porcentagem_executada": "85.42%",
-    "valor_executado": "7551.39"
+    "valor_total_itens": 4125,
+    "descontos": 0,
+    "acrescimos": 0,
+    "valor_total": 4125,
+    "bdi": 10,
+    "valor_total_bdi": 4537.5
   }
 }
+
 
 
 ```
