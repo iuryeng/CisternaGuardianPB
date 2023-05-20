@@ -1,0 +1,11 @@
+
+ diagrama de interação que representa a interação entre o Engenheiro Fiscal, a Obra e a Fiscalização para monitorar o progresso da obra
+ 
+ [![](https://mermaid.ink/img/pako:eNpdUU1vgzAM_SuWz6yCkhXIoafBbULqbhMXD1waCRIWgrS26n9foOu69Wa9L1vPZ6xNwyhx5M-Jdc0vilpLfaUBBrJO1Wog7SAvgEbIdcv6wMoaKNRYU_coK2dV-WHpkVjsV486UU1mFuTF03ZbStjxgoLS48CeA8vt1JGdNaWX5IWEwljNNQO56RYBDcNgTWt5HO95xZw3GOvoTkJDv1cVP4E7btXoLAFDb7Ryxv4xYIA9255U46s5z7YK3YF7rlD6seE9TZ2rsNIXL6XJmbejrlE6O3GA09CQuzX5H8ybeRPKPXWjB303KM_4hTIS0SpNw0ikYRZnsYhFgEeUSbISmywJw2eRrMM4zS4BnozxqeEqFSKL1skmEVG4TlJv4CX99frR5bHLivfFMJ9x-QaICKLG?type=png)](https://mermaid.live/edit#pako:eNpdUU1vgzAM_SuWz6yCkhXIoafBbULqbhMXD1waCRIWgrS26n9foOu69Wa9L1vPZ6xNwyhx5M-Jdc0vilpLfaUBBrJO1Wog7SAvgEbIdcv6wMoaKNRYU_coK2dV-WHpkVjsV486UU1mFuTF03ZbStjxgoLS48CeA8vt1JGdNaWX5IWEwljNNQO56RYBDcNgTWt5HO95xZw3GOvoTkJDv1cVP4E7btXoLAFDb7Ryxv4xYIA9255U46s5z7YK3YF7rlD6seE9TZ2rsNIXL6XJmbejrlE6O3GA09CQuzX5H8ybeRPKPXWjB303KM_4hTIS0SpNw0ikYRZnsYhFgEeUSbISmywJw2eRrMM4zS4BnozxqeEqFSKL1skmEVG4TlJv4CX99frR5bHLivfFMJ9x-QaICKLG)
+ 
+ Neste diagrama:
+
+1. O Engenheiro Fiscal (EF) realiza inspeções regulares na Obra (O).
+2. A Obra fornece atualizações de progresso ao Engenheiro Fiscal.
+3. O Engenheiro Fiscal reporta o progresso da Obra à Fiscalização (F).
+4. A Fiscalização registra e monitora o progresso da Obra.
