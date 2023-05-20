@@ -95,4 +95,14 @@ conjunto de princípios de design que visa tornar os sistemas de software mais c
 9. **Princípio de substituição de Liskov**: As classes concretas podem ser substituídas por suas interfaces. Por exemplo, você pode substituir a implementação concreta do ObraRepository (ObraRepositoryImpl) por qualquer outra classe que implemente a interface ObraRepository.
 
 
+Veja aqui um diagram que implementa uma API Rest 
+
+
+- A API REST geralmente é considerada parte dos Adaptadores de Interface. Esses adaptadores são responsáveis por converter dados de entrada e saída em formatos que o núcleo do aplicativo pode entender. No caso de uma API REST, isso geralmente envolve a conversão de solicitações HTTP e respostas em chamadas de método e dados que o núcleo do aplicativo pode usar.
+
+![image](https://github.com/iuryeng/CisternaGuardianPB/assets/38250160/37e5a4f5-fac8-4cf2-ab16-e78446419e4e)
+
+
+
+
 
