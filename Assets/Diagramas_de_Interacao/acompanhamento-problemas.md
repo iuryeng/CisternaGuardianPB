@@ -1,0 +1,12 @@
+
+diagrama de interação que representa a interação entre o Engenheiro Fiscal, a Obra e a Fiscalização quando um problema identificado anteriormente é resolvido
+
+[![](https://mermaid.ink/img/pako:eNqNksFugzAMhl8l8plWULICOfSywW1C6qQdJi5uMG0kSFgI09qq775AN6ndYdottr_fv-X4DNLUBAIGeh9JS3pSuLfYVZqxHq1TUvWoHcsLhgPL9Z70gZQ1rFCDxPY3NlPXkjqhRPMbKCeg3FmcCnmx2GxKwV7JqkZJZJYG045exmrDemt2LXUzidKpD3TEyikqF16XF4I9Gt0o290Ip3JN9_hs4-kt9ca6_7gUU1T8uGxprwZn_xDeOBYQQEd-JlX7rZ6nagXuQB1VIPyzpgbH1lVQ6YtHcXTm5aglCGdHCmDsa9_l-xPuk3mtnLEgGmwHn_TrBHGGTxARj5ZpGkY8DbM4i3nMAziCSJIlX2dJGD7wZBXGaXYJ4GSM7xouU86zaJWsEx6FqySNA6C5-_P1GOabmC3eZsE0xuULJ0i2ug?type=png)](https://mermaid.live/edit#pako:eNqNksFugzAMhl8l8plWULICOfSywW1C6qQdJi5uMG0kSFgI09qq775AN6ndYdottr_fv-X4DNLUBAIGeh9JS3pSuLfYVZqxHq1TUvWoHcsLhgPL9Z70gZQ1rFCDxPY3NlPXkjqhRPMbKCeg3FmcCnmx2GxKwV7JqkZJZJYG045exmrDemt2LXUzidKpD3TEyikqF16XF4I9Gt0o290Ip3JN9_hs4-kt9ca6_7gUU1T8uGxprwZn_xDeOBYQQEd-JlX7rZ6nagXuQB1VIPyzpgbH1lVQ6YtHcXTm5aglCGdHCmDsa9_l-xPuk3mtnLEgGmwHn_TrBHGGTxARj5ZpGkY8DbM4i3nMAziCSJIlX2dJGD7wZBXGaXYJ4GSM7xouU86zaJWsEx6FqySNA6C5-_P1GOabmC3eZsE0xuULJ0i2ug)
+
+
+
+Neste diagrama:
+
+O Engenheiro Fiscal (EF) verifica a resolução do problema na Obra (O).
+A Obra confirma a resolução do problema.
+O Engenheiro Fiscal então reporta a resolução do problema à Fiscalização (F), que registra a resolução do problema.
