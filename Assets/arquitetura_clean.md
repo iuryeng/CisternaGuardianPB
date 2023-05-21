@@ -111,7 +111,30 @@ Neste Projeto:
 
 ![image](http://www.plantuml.com/plantuml/png/jLNDRjGm4BxxAKOzfO9zWQXQ5LegvLJ4pnbDxSdA8h4ZsrcneBmxDiJQ8SGHAzfSDfwV-RxvTiQvzG5T6FjEY07bLpmGNDtR7hMvWXy2uYCxz1uUdnp2pSqx4tGuxVUpBpslG2kemGUdpO5PZUrfpOvAIsqDkY-3iqyTzLZbbnhUps_NDHojLh_I9i5uF6WliTFVKQAzZ8_2W8r9sD5xZu4MlWVTSySa9YR9PqzmXvvyLaMRGAv5IV0czvEvnzWK6jarEMX1aBwH70DLDehQdCc-XYm4C2MW84KHkEc7Be9_97VK2-WT9CWFD5YlWtMdMFln3yFpa2mfnF-y_r2fPMMYcLVz1xLu-0ihTZbXFdDPbvMXMt3O4D7ZyJUXcNZ6Oo6jDkhjgL4LsvlhEVnl7PFrpfhWRDUHYyZdmq8uB2r6NHpTjMok5gzGThFUf2CCb3XNAvqVA2HNiV5yOQbCyvDDlWjNWXVYR7EnvvgMrc4iCSemEbfUtdnQvca_6rvaP2OXqWbsk_tsJLL3F7bHYaa55Wta55w_E0mSOojk6uTPLm9dZFH3FPcGKlYMR8h0K5ZAPbyyJToIKUdx_HC0)
 
+Exemplo de modulos
 
+```cmd
+src
+└── cooperar
+    └── domain
+        ├── entities
+        │   ├── Obra.java
+        │   └── Problema.java
+        ├── exceptions
+        │   └── ObraNotFoundException.java
+        ├── usercases
+        │   ├── interfaces
+        │   │   └── AdicionarProblemaUseCase.java
+        │   └── services
+        │       └── AdicionarProblemaUseCaseImpl.java
+        └── usercases
+            ├── interfaces
+            │   └── AdicionarProblemaUseCase.java
+            └── services
+                └── AdicionarProblemaUseCaseImpl.java
+
+
+```
 
 
 
