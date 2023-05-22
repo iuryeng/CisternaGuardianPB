@@ -137,6 +137,44 @@ src
 ```
 
 
+## Passos 
+
+1. Definir as entidades:
+
+- Identifique as principais entidades do seu domínio relacionadas à funcionalidade que você está implementando. No caso da funcionalidade de acompanhar o progresso da obra, a entidade principal pode ser "Obra" ou "Progresso".
+Defina os atributos e métodos necessários para cada entidade, levando em consideração os requisitos da User Story.
+
+2. Definir os casos de uso (Use Cases):
+
+- Identifique quais são as principais ações que o usuário poderá realizar na funcionalidade de acompanhar o progresso da obra. Por exemplo, "Visualizar o percentual concluído da obra" ou "Ver as datas de início e fim planejadas da obra".
+Crie interfaces para os casos de uso, especificando os métodos necessários para cada um.
+
+3. Implementar os serviços (Services):
+
+- Crie classes que implementem as interfaces dos casos de uso.
+No caso da funcionalidade de acompanhar o progresso da obra, você terá um serviço responsável por calcular o percentual concluído da obra e outro serviço para recuperar as datas de início e fim planejadas.
+
+4. Implementar os repositórios:
+
+- Crie interfaces para os repositórios que serão responsáveis por lidar com a persistência dos dados, como ObraRepository e ProgressoRepository.
+Implemente essas interfaces de acordo com a necessidade do seu projeto. No momento, você pode optar por implementações em memória, mas mantenha a estrutura do repositório separada das demais camadas.
+
+5. Conectar as camadas:
+
+- Faça a conexão entre as camadas da Clean Architecture. Por exemplo, no caso dos casos de uso, eles devem depender das interfaces dos repositórios, mas não devem conhecer as implementações concretas.
+
+6. Testar as funcionalidades:
+
+- Crie testes unitários para cada caso de uso, serviço e repositório.
+- Garanta que cada parte da funcionalidade esteja funcionando corretamente.
+
+7. Refatorar, se necessário:
+
+- Se surgirem novos requisitos ou se for preciso fazer melhorias no código, siga um processo de refatoração sistemático.
+- Identifique as partes do código que precisam ser alteradas e faça as modificações necessárias.
+- Certifique-se de manter os testes atualizados durante o processo de refatoração.
+- Essas são etapas gerais que você pode seguir para implementar as funcionalidades usando a Clean Architecture
+
 
 
 
